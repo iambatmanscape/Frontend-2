@@ -10,4 +10,79 @@ body {
     overflow-x: hidden;
 }
 
-@media screen and (max-width:800px) {}
+div.img-holder {
+    height: 128px;
+    width: 128px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+
+.spinner {
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 64px;
+    height: 64px;
+    border: 8px solid;
+    border-color: #3d5af1 transparent #3d5af1 transparent;
+    border-radius: 50%;
+    animation: spin-anim 1.2s linear infinite;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card-text {
+    margin-top: 1rem;
+    word-wrap: wrap;
+}
+
+div.grid-2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+
+@keyframes spin-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    left: 74%;
+    background-color: white;
+    z-index: 1;
+    box-shadow: -2px 0 4px 2px #efeded;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+div.has-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
