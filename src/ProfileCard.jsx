@@ -26,7 +26,7 @@ function ProfileCard({ username, id, ProfileImg, job, bio }) {
     }
 
     return (
-            <Card style={styles} className='w-75' onClick={log}>
+            <Card style={styles} className='w-100' onClick={log}>
         <div className='img-holder'>
           <img src={imageSrc} onError={handleImageError}/> <
         /div> <

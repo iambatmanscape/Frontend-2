@@ -45,7 +45,7 @@ export default function App() {
             loading ? (
                 <Loader />
             ) : error ? (
-                <div>Error: {error}</div>
+                 <Error/>
             ) : profiles.length > 0 ? (
                 profiles.map((profile, index) => (
                     <ProfileCard
