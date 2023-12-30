@@ -30,8 +30,8 @@ export default function Aside() {
             <p className='text-muted'>{info.jobTitle}</p>
             <p>{info.Bio}</p>
             
-            <p>{`Email : ${info.profile.email}`}</p>
-            <p>{`Joined On: ${(info.createdAt).split('T')[0]}`}</p>
+            <p><span className='fw-bold fst-italic text-secondary'>Email : </span>{info.profile.email}</p>
+            <p><span className='fw-bold fst-italic text-secondary'>Joined On : </span>{(info.createdAt).split('T')[0]}</p>
           </div>
 
 
